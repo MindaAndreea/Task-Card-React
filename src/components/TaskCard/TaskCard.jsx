@@ -1,23 +1,18 @@
 import "./TaskCard.css"
 
-function TaskCard() {
-    const type1 = "T-1";
-    const status1 = "Todo";
-    const text1 = "Create a design system for Enum Workspace";
-    const duedate1 = "24 / 01 / 2021";
-
+function TaskCard(props) {
     return (
        <div className="taskcardContainer">
         <div className="top">
-            <div className="type">{type1}</div>
-            <div className="status">{status1}</div>
+            <div className="type">{props.type}</div>
+            <div className="status">{props.status}</div>
         </div>
         <div className="middle">
-            <p>{text1}</p>
+            <p>{props.text}</p>
         </div>
         <div className="bottom">
-            <span>Due Date</span>
-            <p>{duedate1}</p>
+            <span className="text">Due Date</span>
+            <p className="duedate">{props.duedate}</p>
         </div>
        </div>
     );

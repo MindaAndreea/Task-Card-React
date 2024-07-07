@@ -1,4 +1,20 @@
 .App {
+    background-color: #F3F3FB;
+    top: 154px;
+    left: 70px;
+    padding: 80px;
+    gap: 40px;
+    border-radius: 50px;
+    font-family: "Sen", sans-serif;
+}
+
+.App .title {
+font-size: 26px;
+font-weight: 400;
+line-height: 31.28px;
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
 }
